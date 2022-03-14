@@ -56,18 +56,6 @@ _if 5 > 2:_
 ___ _print("Five is greater than two!")_
         
 ___ ___ _print("Five is greater than two!")_
-          
-# Python Variables
-
-**In Python, variables are created when you assign a value to it :**
-
-***Example***
-
-_x = 5_
-
-_y = "Hello, World!"_
-
-**Python has no command for declaring a variable**
 
 # Comments
 
@@ -79,7 +67,7 @@ _y = "Hello, World!"_
 
 **Python has commenting capability for the purpose of in-code documentation.**
 
-**Comments start with a #, and Python will render the rest of the line as a comment (it will basically ignore them) :**
+- **Comments start with a #, and Python will render the rest of the line as a comment (it will basically ignore them) :**
 
 ***Example #1***
 
@@ -91,7 +79,7 @@ _print("Hello, World!")_
 
 _print("Hello, World!") #This is a comment_
 
-**A comment does not have to be text that explains the code, it can also be used to prevent Python from executing code :**
+- **A comment does not have to be text that explains the code, it can also be used to prevent Python from executing code :**
 
 ***Example***
 
@@ -103,7 +91,7 @@ _print("Cheers, Mate!")_
 
 - Python does not really have a syntax for multi line comments.
 
-**To add a multiline comment you could insert a # for each line :**
+- **To add a multiline comment you could insert a # for each line :**
 
 ***Example***
 
@@ -117,7 +105,7 @@ _print("Hello, World!")_
 
 **Or, not quite as intended, you can use a multiline string.**
 
-**Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it :**
+- **Since Python will ignore string literals that are not assigned to a variable, you can add a multiline string (triple quotes) in your code, and place your comment inside it :**
 
 ***Example***
 
@@ -137,3 +125,38 @@ _print("Hello, World!")_
 
 # Python Variables
 
+- Variables are containers for storing data values.
+
+- **In Python, variables are created when you assign a value to it :**
+
+***Example***
+
+_x = 5_
+
+_y = "Hello, World!"_
+
+**Creating Variables**
+
+- Python has no command for declaring a variable
+
+- **A variable is created the moment you first assign a value to it :**
+
+***Example***
+
+_x = 5_
+
+_y = "John"_
+
+_print(x)_
+
+_print(y)_
+
+- **Variables do not need to be declared with any particular type, and can even change type after they have been set :**
+
+***Example***
+
+_x = 4       # x is of type int_
+
+_x = "Sally" # x is now of type str_
+
+_print(x)_
