@@ -1,30 +1,28 @@
-MongoDB - Indexing
+## MongoDB - Indexing
 
 sudo rm /var/lib/apt/lists/lock
+
 sudo rm /var/cache/apt/archives/lock
+
 sudo rm /var/lib/dpkg/lock
+
 sudo apt install mongodb-server -y
+
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2930ADAE8CAF5059EE73BB4B58712A2291FA4AD5
+
 echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.6 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.6.list
+
 sudo apt-get update
+
 sudo apt-get install -y mongodb-org
+
 sudo service mongodb start
 
 -------------
 
-Installing and starting MongoDB :
-Click on Install
+## Installing and starting MongoDB :
 Now in a terminal type, mongo
-Now you have
-
-
-Successfully running MongoDB environment
-
-
-a command line shell to interact with MongoDB
-
-
-This question gives you hands-on experience on Indexes in MongoDB.
+Now you have Successfully running MongoDB environment
 
 
 1. Use the database local
