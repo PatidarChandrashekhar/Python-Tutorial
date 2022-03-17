@@ -1,11 +1,11 @@
-# Python-Tutorial
+# Python - Tutorial
 This repository contains coding syntax for Python language.
 
 - Python is a popular programming langauge.
 
 - Python can be used on a server to create web applications.
 
-# Python Syntax
+# Syntax
 
 **SYNTAX - A set of rules for grammar and spelling :**
 
@@ -15,7 +15,7 @@ _print("I have a car")_
 
 _Output: I have a car_
 
-# Python Indentation
+# Indentation
 
 **Indentation refers to the spaces at the beginning of a code line.**
 
@@ -123,7 +123,7 @@ _print("Hello, World!")_
 
 **As long as the string is not assigned to a variable, Python will read the code, but then ignore it, and you have made a multiline comment.**
 
-# Python Variables
+# Variables
 
 - Variables are containers for storing data values.
 
@@ -221,11 +221,11 @@ A variable can have a short name (such as x and y) or a longer name (such as age
 
 ***Variables in Python have the following rules :***
 
-- _The name of a variable must begin with a letter or the underscore character._
+- _The name of a variable must begin with a letter or the underscore character_
 
-- _A number cannot be the first character in a variable name._
+- _A number cannot be the first character in a variable name_
 
-- _Only alpha-numeric characters and underscores (A-z, 0-9, and _) are allowed in variable names._
+- _In variable names, only alpha-numeric characters and underscores (A-z, 0-9, and_) _are permitted_
 
 - _Case matters when it comes to variable names (age, Age and AGE are three different variables)_
 
@@ -295,11 +295,11 @@ _print(m)_
 
 _print(a)_
 
-- ***NOTE: If the number of variables does not match the number of values, an error will occur***
+***NOTE: If the number of variables does not match the number of values, an error will occur***
 
 **ASSIGN ONE VALUE TO MULTIPLE VARIABLES**
 
-- _You may also use a single line to assign the same value to many variables :_
+- **You may also use a single line to assign the same value to many variables :**
 
 ***Example***
 
@@ -313,7 +313,7 @@ _print(a)_
 
 **UNPACK A COLLECTION**
 
-- _Python allows you to extract values from a list, tuple, or other collection of data into variables. This is referred to as unpacking._
+- **Python allows you to extract values from a list, tuple, or other collection of data into variables. This is referred to as unpacking :**
 
 ***Example***
 
@@ -394,3 +394,73 @@ _a = 4_
 _b = "Camille"_
 
 _print(a, b)_
+
+**GLOBAL VARIABLES**
+
+- Global variables are variables that are created outside of a function (as in all of the examples above).
+
+- **Everyone can utilise global variables, both inside and outside of functions :**
+
+***Example*** _(Create a variable outside of a function and utilise it within it)_
+
+_a = "awesome"_
+
+_def myfunc():_
+  
+__ _print("I am " + a)_
+
+_myfunc()_
+
+- If you create a variable with the same name inside a function, it will be local, meaning it can only be used within that function. 
+
+- **The global variable with the same name will stay global and have the same value as before :**
+
+***Example*** _(Create a variable with the same name as the global variable inside a function)_
+
+_a = "awesome"_
+
+_def myfunc():_
+  
+__ _a = "fantastic"_
+  
+__ _print("I am " + a)_
+
+_myfunc()_
+
+_print("Python is " + a)_
+
+**THE GLOBAL KEYWORD**
+
+- When you create a variable inside a function, it is usually local, meaning it may only be utilised within that function.
+
+- **The global keyword can be used to define a global variable within a function :**
+
+***Example*** _(The variable belongs to the global scope if you use the global keyword)_
+
+_def myfunc():_
+  
+__ _global a_
+
+__ _a = "fantastic"_
+
+_myfunc()_
+
+_print("I am " + a)_
+
+- **If you want to alter a global variable within a function, use the global keyword :**
+
+***Example*** _(To update the value of a global variable inside a function, use the global keyword to refer to the variable)_
+
+_a = "awesome"_
+
+_def myfunc():_
+  
+__ _global a_
+
+__ _a = "fantastic"_
+
+_myfunc()_
+
+_print("I am " + a)_
+
+# Data Types
