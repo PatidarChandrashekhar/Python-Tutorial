@@ -21,7 +21,7 @@ _Output: I have a car_
 
 - **Python uses indentation to indicate a block of code :**
 
-***Example :*** ___ = _tab_
+***Example :*** ___ = _indent_
 
 _if 8 > 4:_
   
