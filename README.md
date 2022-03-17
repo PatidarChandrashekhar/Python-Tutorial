@@ -464,3 +464,10 @@ _myfunc()_
 _print("I am " + a)_
 
 # Data Types
+
+- Data type is a crucial concept in programming.
+
+- Variables can store a variety of data, and different types can perform different tasks.
+
+- Python comes with the following data types pre-installed in these categories :
+
