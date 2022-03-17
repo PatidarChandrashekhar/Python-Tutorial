@@ -257,7 +257,7 @@ _my var = "Camille"_
 
 **REMEMBER THAT VARIABLES ARE CASE-SENSITIVE**
 
-**Variable Names with Multiple Words*
+***Variable Names with Multiple Words***
 
 - _It can be difficult to comprehend variable names that contain more than one word._
 
@@ -280,3 +280,117 @@ _my var = "Camille"_
 - An underscore character separates each word :
 
 - _my_variable_name = "Camille"_
+
+**ASSIGN VALUES TO MULTIPLE VARIABLES**
+
+- _You can assign values to many variables in a single line in Python :_
+
+***Example***
+
+_r, m, a = "Raspberry", "Mango", "Apple"_
+
+_print(r)_
+
+_print(m)_
+
+_print(a)_
+
+- ***NOTE: If the number of variables does not match the number of values, an error will occur***
+
+**ASSIGN ONE VALUE TO MULTIPLE VARIABLES**
+
+- _You may also use a single line to assign the same value to many variables :_
+
+***Example***
+
+_r = m = a = "Raspberry"_
+
+_print(r)_
+
+_print(m)_
+
+_print(a)_
+
+**UNPACK A COLLECTION**
+
+- _Python allows you to extract values from a list, tuple, or other collection of data into variables. This is referred to as unpacking._
+
+***Example***
+
+- _Unpack a list:_
+
+_fruits = ["raspberry", "mango", "apple"]
+
+_r, m, a = fruits_
+
+_print(r)_
+
+_print(m)_
+
+_print(a)_
+
+**OUTPUT VARIABLES**
+
+- **The print() function in Python is frequently used to print variables :**
+
+***Example***
+
+_y = "I am awesome"_
+
+_print(y)_
+
+- **Multiple variables are produced by the print() function, separated by a comma :**
+
+***Example***
+
+_a = "I"_
+
+_b = "am"_
+
+_c = "awesome"_
+
+_print(a, b, c)_
+
+- **You can also output multiple variables by using the + operator :**
+
+***Example***
+
+_a = "I "_
+
+_b = "am "_
+
+_c = "awesome "_
+
+_print(a + b + c)_
+
+**NOTE : The space character between "Python_" and "is_" is important; otherwise, the result would be "Pythonisawesome."
+
+- **The + letter serves as a mathematical operator for numbers :***
+
+***Example***
+
+_a = 15_
+
+_b = 5_
+
+_print(a + b)_
+
+- **When you use the + operator to combine a string and a number in the print() function, Python throws an error:**
+
+***Example***
+
+_a = 4_
+
+_b = "Camille"_
+
+_print(a + b)_
+
+- **When using the print() function, the best way to output many variables is to use commas to separate them, which even supports different data types :**
+
+***Example***
+
+_a = 4_
+
+_b = "Camille"_
+
+_print(a, b)_
