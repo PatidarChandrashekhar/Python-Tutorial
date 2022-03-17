@@ -257,3 +257,26 @@ _my var = "Camille"_
 
 **REMEMBER THAT VARIABLES ARE CASE-SENSITIVE**
 
+**Variable Names with Multiple Words*
+
+- _It can be difficult to comprehend variable names that contain more than one word._
+
+- _You can use a variety of approaches to make them more readable :_ 
+
+***CAMEL CASE***
+
+- Except for the first, each word begins with a capital letter :
+
+- _myVariableName = "Camille"_
+
+***PASCAL CASE***
+
+- The first letter of each word is capitalised :
+
+- _MyVariableName = "Camille"_
+
+***SNAKE CASE***
+
+- An underscore character separates each word :
+
+- _my_variable_name = "Camille"_
