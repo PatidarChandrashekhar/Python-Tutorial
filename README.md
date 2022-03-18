@@ -465,9 +465,99 @@ _print("I am " + a)_
 
 # Data Types
 
+**BUILT-IN DATA TYPES**
+
 - Data type is a crucial concept in programming.
 
 - Variables can store a variety of data, and different types can perform different tasks.
 
-- Python comes with the following data types pre-installed in these categories :
+- **Python comes with the following data types pre-installed in these categories :**
+
+***Text Type*** :	_str_
+
+***Numeric Types*** : _int, float, complex_
+
+***Sequence Types*** :	_list, tuple, range_
+
+***Mapping Type*** :	_dict_
+
+***Set Types*** : _set, frozenset_
+
+***Boolean Type*** :	_bool_
+
+***Binary Types*** : _bytes, bytearray, memoryview_
+
+**GETTING THE DATA TYPE**
+
+- **The type() function can be used to determine the data type of any object :**
+
+***Example*** _(Print the variable a's data type)_
+
+_a = 5_
+
+_print(type(a))_
+
+**SETTING THE DATA TYPE**
+
+**When you assign a value to a variable in Python, the data type is set :**
+
+_a = "Hello World"_	***string (str)***
+
+_a = 20_	***integer (int)***	
+
+_a = 20.5_	***float***
+
+_a = 1j_	***complex***
+
+_a = ["apple", "banana", "cherry"]_	***list***	
+
+_a = ("apple", "banana", "cherry")_	***tuple***	
+
+_a = range(6)_	***range***	
+
+_a = {"name" : "John", "age" : 36}_	***dict***
+
+_a = {"apple", "banana", "cherry"}_	***set***	
+
+_a = frozenset({"apple", "banana", "cherry"})_	***frozenset***	
+
+_a = True_	***boolean (bool)***
+
+_a = b"Hello"_	***bytes***	
+
+_a = bytearray(5)_	***bytearray***	
+
+_a = memoryview(bytes(5))	memoryview
+
+**SETTING THE SPECIFIC DATA TYPE**
+
+- **The constructor functions listed below can be used to specify the data type :**
+
+_a = str("Hello World")_	***string (str)***
+
+_a = int(20)_	***integer (int)***
+
+_a = float(20.5)_	***float***	
+
+_a = complex(1j)_	***complex***	
+
+_a = list(("apple", "banana", "cherry"))_	***list***	
+
+_a = tuple(("apple", "banana", "cherry"))_	***tuple***	
+
+_a = range(6)_	***range***	
+
+_a = dict(name="John", age=36)_	***dict***	
+
+_a = set(("apple", "banana", "cherry"))_	***set***	
+
+_a = frozenset(("apple", "banana", "cherry"))_	***frozenset***	
+
+_a = bool(5)_	***boolean (bool)***	
+
+_a = bytes(5)_	***bytes***	
+
+_a = bytearray(5)_	***bytearray***	
+
+_a = memoryview(bytes(5))_	***memoryview***
 
