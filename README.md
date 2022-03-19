@@ -561,3 +561,306 @@ _a = bytearray(5)_	***bytearray***
 
 _a = memoryview(bytes(5))_	***memoryview***
 
+# Numbers
+
+**Python has three different numeric types :**
+
+- int
+
+- float 
+
+- complex
+
+**When you add a value to a numeric type variable, it is created :**
+
+***Example***
+
+_a = 3    # int_
+
+_b = 8.5  # float_
+
+_c = 4x   # complex_
+
+**You can use the type() function in Python to determine the type of any object :**
+
+***Example***
+
+_print(type(a))_
+
+_print(type(b))_
+
+_print(type(c))_
+
+**INT**
+
+- **An int, or integer is a whole number that can be positive or negative, has no digits, and can be any length :**
+
+***Example***
+
+_a = 4_
+
+_b = 134912741298298_
+
+_c = -2419342_
+
+_print(type(a))_
+
+_print(type(b))_
+
+_print(type(c))_
+
+**FLOAT**
+
+- **A float, also known as a "floating point number," is a positive or negative number with one or more decimals :**
+
+***Example***
+
+_a = 2.25_
+
+_b = 4.0_
+
+_c = -72.56_
+
+_print(type(a))_
+
+_print(type(b))_
+
+_print(type(c))_
+
+- **Scientific numbers with a "e", to signify the power of ten, can also be used as floats :**
+
+***Example***
+
+_a = 45e2_
+
+_b = 18E7_
+
+_c = -90.2e505_
+
+_print(type(a))_
+
+_print(type(b))_
+
+_print(type(c))_
+
+**COMPLEX**
+
+- **The imaginary portion of complex numbers is written with a "j" :**
+
+***Example***
+
+_a = 2+4j_
+
+_b = 4j_
+
+_c = -4j_
+
+_print(type(a))_
+
+_print(type(b))_
+
+_print(type(c))_
+
+**TYPE CONVERSION**
+
+- **The int(), float(), and complex() functions can be used to convert between types :**
+
+***Example***
+
+_a = 4    # int_
+
+_b = 4.5  # float_
+
+_c = 2j   # complex_
+
+_#convert from int to float :_
+
+_x = float(a)_
+
+_#convert from float to int :_
+
+_y = int(b)_
+
+_#convert from int to complex :_
+
+_z = complex(a)_
+
+_print(x)_
+
+_print(y)_
+
+_print(z)_
+
+_print(type(x))_
+
+_print(type(y))_
+
+_print(type(z))_
+
+**NOTE : Complex numbers cannot be converted to another number type**
+
+**RANDOM NUMBER**
+
+- **Although Python does not have a random() function, it does have a built-in module named random that can be used to generate random numbers :**
+
+***Example** _(Import the random module and display a number between 1 and 9 as follows :)_
+
+_import random_
+
+_print(random.randrange(1, 10))_
+
+# Casting
+
+**SPECIFY A VARIABLE TYPE**
+
+- It's possible that you'll wish to assign a type to a variable at some point. This can be accomplished through casting. Python is an object-oriented language, therefore data types, including primitive kinds, are defined using classes.
+
+- **Constructor functions are used to cast objects in Python :**
+
+- _int() creates an integer number from an integer, a float (by deleting all decimals), or a text literal (providing the string represents a whole number)_
+
+- _float() is a function that creates a float number from an integer, a float, or a string literal (providing the string represents a float or an integer)_
+
+- _str() - creates a string from a number of different data types, including strings, integer literals, and float literals_
+
+***Example*** _(int)_
+
+_a = int(4)   # a will be 4_
+
+_b = int(3.6) # b will be 3_
+
+_c = int("7") # c will be 7_
+
+***Example*** _(float)_
+
+_a = float(4)     # a will be 4.0_
+
+_b = float(3.9)   # b will be 3.9_
+
+_c = float("2")   # c will be 2.0_
+
+_d = float("1.7") # d will be 1.7_
+
+***Example*** _(str)_
+
+_x = str("s3") # x will be 's3'_
+
+_y = str(4)    # y will be '4'_
+
+_z = str(1.0)  # z will be '1.0'_
+
+# Strings
+
+- Single quotation marks or double quotation marks are used to surround strings in Python.
+
+- 'world' and "world" are the same.
+
+- **The print() function can be used to display a string literal :**
+
+***Example***
+
+_print("World")_
+
+_print('World')_
+
+**ASSIGN STRING TO A VARIABLE**
+
+- **When you assign a string to a variable, you use the variable name, an equal sign, and the string :**
+
+***Example***
+
+_x = "World"_
+
+_print(x)_
+
+**MULTILINE STRINGS**
+
+- **Using three quotation marks, you can assign a multiline string to a variable :**
+
+***Example***
+
+_x = """Life is like riding a bicycle. 
+To keep your balance, 
+you must keep moving."""_
+
+_print(x)_
+
+***Example*** _OR 3 SINGLE QUOTES_
+
+_x = '''Life is like riding a bicycle. 
+To keep your balance, 
+you must keep moving.'''_
+
+_print(x)_
+
+**NOTE : As a result, line breaks are added in the same place as they were in the code**
+
+**STRINGS ARE ARRAYS**
+
+- Strings in Python, like many other popular programming languages, are arrays of bytes that represent unicode characters.
+
+- However, because Python lacks a character data type, a single character is merely a one-length string.
+
+- **Square brackets can be used to access the string's elements :**
+
+***Example*** _(Get the character to position 1 (remember, the first character has the position 0))_
+
+_x = "Hello, World!"_
+
+_print(x[1])_
+
+**LOOPING THROUGH A STRING**
+
+- **We can use a for loop to loop through the characters in a string since strings are arrays :**
+
+***Example***
+
+_for x in "apple":_
+  
+___ _print(x)_
+
+**STRING LENGTH**
+
+- **Use the len() function to find out how long a string is :**
+
+***Example***
+
+_x = "Hello, World!"_
+
+_print(len(x))_
+
+**CHECK STRING**
+
+- **The keyword : in, can be used to see if a phrase or character is contained in a string :**
+
+***Example***
+
+_txt = "May the Force be with you."_
+
+_print("you" in txt)_
+
+***Example*** _(Use it in an if statement)_
+
+_txt = "May the Force be with you."_
+
+_if "you" in txt:_
+  
+___ _print("Yes, 'you' is present.")_
+
+**CHECK IF NOT**
+
+- **The keyword : not in, can be used to see if a phrase or character is not contained in a string :**
+
+***Example***
+
+_txt = "May the Force be with you."_
+
+_print("me" not in txt)_
+
+***Example*** _(Use it in an if statement)_
+
+_txt = "May the Force be with you."_
+
+_if "me" not in txt:_
+  
+___ _print("No, 'me' is NOT present.")_
