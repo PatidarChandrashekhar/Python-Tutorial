@@ -780,7 +780,9 @@ _print(x)_
 ***Example***
 
 _x = """Life is like riding a bicycle. 
+
 To keep your balance, 
+
 you must keep moving."""_
 
 _print(x)_
@@ -788,7 +790,9 @@ _print(x)_
 ***Example*** _OR 3 SINGLE QUOTES_
 
 _x = '''Life is like riding a bicycle. 
+
 To keep your balance, 
+
 you must keep moving.'''_
 
 _print(x)_
